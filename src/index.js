@@ -74,7 +74,7 @@ function onLoadMore([entry], observer) {
     newApiService.incrementPage();
     loadImg(nameImg);
   }
-  if (ApiService.page === lastPage) {
+  if (newApiService.page === lastPage) {
     observer.disconnect();
   }
 }
