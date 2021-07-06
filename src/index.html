@@ -10,8 +10,37 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
+    <div class="search-box">
+      <form class="search-form" id="search-form">
+        <input
+          class="search-img"
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button class="button btn-service" type="submit" data-action="search">
+          <span
+            class="spinner-grow spinner-grow-sm is-hidden"
+            role="status"
+            aria-hidden="true"
+          ></span>
+          <span class="label">Search</span>
+        </button>
+      </form>
+    </div>
+
+    <ul class="gallery"></ul>
+    <div class="end-gallery"></div>
     <script src="./index.js"></script>
   </body>
 </html>
